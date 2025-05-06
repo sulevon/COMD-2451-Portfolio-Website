@@ -11,41 +11,68 @@
             <header class="w3-container w3-indigo">  <!--w3-container adds 16 pixels of padding 
                 around each element; w3-green makes the background green -->
                 <h1>Marco Polo Magalhaes - Portfolio</h1>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="about.html">About Me</a></li>
-                        <li><a href="resume.html">Resume</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="contact.html">Contact</a>
+                  </div>
+                  
+                  <div id="main">
+                    <span class="openbutton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+                  </div>
+                  
+                  <script>
+                  function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                    document.getElementById("main").style.marginLeft = "250px";
+                  }
+                  
+                  function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    document.getElementById("main").style.marginLeft= "0";
+                  }
+                  </script>
             </header>
 
-            <div class="w3-container">
-                <h1>Design Work</h1>
-            </div>
-            
-            <section class="w3-container ">
-                <p>Below are images of work I've done for a magazine ad campaign, social media campaign, and a recreation of a album cover for a vinyl.</p>
-            </section>
-
-            <section class="w3-row-padding row-color-1"> <!-- The w3-row-padding class adds 8 pixels of padding around each element.  -->
-                
-                <article class="w3-col s12 m4 l4">
-                    <h4>Magazine Ad</h4>
-                    <p><img src="assets/frigid_magazinead-72dpi.jpg" alt="Photo of man in a puffer jacket"></p>
-                </article>
-                <article class="w3-col s12 m4 l4">
-                    <h4><a title="Dog Post">Swimply Social Media Post</a></h4>
-                    <p><a href="assets/swimplydogposter-300dpi.jpg"><img src="assets/swimplydogposter-72dpi.jpg" alt="Photo of a dog coming out of a pool"></a></p>
-                </article>
-                <article class="w3-col s12 m4 l4">
-                    <h4>Vinyl Album Cover Remake</h4>
-                    <p><img src="assets/vinyl-record-album-72dpi.jpg" alt="Photo of a vinyl mockup using a new cover"></p>
-                </article>
-            </section>
+            <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="assets/frigid_magazinead-300dpi.jpg">
+                    <img src="assets/frigid_magazinead-72dpi.jpg" alt="Magazine Ad for Frigid Clothing">
+                  </a>
+                  <div class="desc">Frigid Clothing Brand Magazine Page</div>
+                </div>
+              </div>
+              
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="assets/swimplydogposter-300dpi.jpg">
+                    <img src="assets/swimplydogposter-300dpi.jpg" alt="Dog walking out of a pool">
+                  </a>
+                  <div class="desc">Swimply Social Media Post</div>
+                </div>
+              </div>
+              
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="assets/vinyl-record-album-300dpi.jpg">
+                    <img src="assets/vinyl-record-album-300dpi.jpg" alt="Vinyl record album">
+                  </a>
+                  <div class="desc">Radiohead Album Cover Remake</div>
+                </div>
+              </div>
+              
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="assets/frigid_magazineadpage2-300dpi.jpg">
+                    <img src="assets/frigid_magazineadpage2-300dpi.jpg" alt="People with their back turned to the camera wearing jackets">
+                  </a>
+                  <div class="desc">Frigid Clothing Brand Magazine Page 2</div>
+                </div>
+              </div>
+              
+              <div class="clearfix"></div>
 
             <footer>
                 <p>&copy; Copyright 2025</p>
