@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="css/my-styles.css">
+        
     </head>
     <body style="background-color: rgb(223, 223, 223);">
         <div>
@@ -15,25 +16,14 @@
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <a href="#">About</a>
                     <a href="#">Services</a>
-                    <a href="#">Clients</a>
+                    <a href="resume.html">Resume</a>
                     <a href="contact.html">Contact</a>
                   </div>
                   
                   <div id="main">
                     <span class="openbutton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
                   </div>
-                  
-                  <script>
-                  function openNav() {
-                    document.getElementById("mySidenav").style.width = "250px";
-                    document.getElementById("main").style.marginLeft = "250px";
-                  }
-                  
-                  function closeNav() {
-                    document.getElementById("mySidenav").style.width = "0";
-                    document.getElementById("main").style.marginLeft= "0";
-                  }
-                  </script>
+                  <script src="js/navscript.js"></script>
             </header>
 
             <div class="responsive">
