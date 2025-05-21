@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>contact form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marco's Contact</title>
+    <link rel="stylesheet" href="https://use.typekit.net/bjz7fep.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/my-styles.css">
 </head>
+<!-- This is what makes up the fake window -->
+<body style="background-color: rgb(34, 34, 34);">
+    <div>
+      <div class="browser-window">
+        <div class="title-bar">
+          <div class="window-controls">
+            <span class="control close"></span>
+            <span class="control minimize"></span>
+            <span class="control maximize"></span>
+          </div>
+          <div class="address-bar">
+          </div>
+        </div>
 
-<body>
+<body style="background-color: rgb(34, 34, 34);">
 
-    <header class="w3-container w3-indigo">  <!--w3-container adds 16 pixels of padding 
-        around each element; w3-green makes the background green -->
-        <h1>Marco Polo Magalhaes - Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header class="w3-container w3-black w3-padding-16 w3-margin-bottom"> <!-- this w3 class is what gives puts a gap between the header and the stuff below it -->
+
+        <div class="titlecontainer">
+          <span class="openbutton" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          <h1 class="sitetitle">Contact</h1>
+        </div>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Home</a>
+          <a href="#">Gallery</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <script src="js/navscript.js"></script>
+      </header>
 
 <div class="fcf-body">
 
